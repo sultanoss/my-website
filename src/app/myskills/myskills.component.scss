@@ -1,0 +1,91 @@
+h2{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-family: Inter;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.my-skills{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+
+    height: 40px;
+    width: 40px;
+    }
+}
+
+.row1{
+
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.row2{
+
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.row3{
+
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 100%;
+    justify-content: center;
+}
+
+.skill{
+
+    height:150px;
+    width: 250px;
+    border-radius: 6px;
+    background-color: white;
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span{
+
+        font-size: 20px;
+        font-family: Inter;
+    }
+}
+
+.skill-img{
+
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px 5px #00000026;
+}
+
+#angular{
+
+    height: 55px;
+    width: 55px;
+}
