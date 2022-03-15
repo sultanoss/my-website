@@ -9,6 +9,7 @@ import { MyskillsComponent } from './myskills/myskills.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
     MyWorksComponent,
     AboutMeComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

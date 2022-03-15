@@ -1,0 +1,37 @@
+.footer-content{
+
+    height:200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link{
+
+    margin-left: 10%;
+
+    a{
+        color: #8491A0;
+        font-size: 18px;
+        font-family: Inter;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    span{
+
+        color: #8491A0;
+    }
+}
+
+.footer-img{
+
+    margin-right: 10%;
+    
+    img{
+
+        margin-left: 100px;
+        cursor: pointer;
+    }
+}
