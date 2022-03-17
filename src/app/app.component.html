@@ -1,7 +1,11 @@
-<app-banner></app-banner>
+<!-- <app-banner></app-banner> -->
 <app-menu></app-menu>
-<app-myskills></app-myskills>
-<app-my-works></app-my-works>
+
+<div [class.container]="router.url !== '/' ">
+    <router-outlet></router-outlet>
+</div>
+<!-- <app-myskills></app-myskills> -->
+<!-- <app-my-works></app-my-works>
 <app-about-me></app-about-me>
 <app-contact></app-contact>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
