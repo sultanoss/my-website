@@ -8,5 +8,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'mywebsite';
-  constructor(public router: Router) { }
+  
+  constructor() { }
 }
