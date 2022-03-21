@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .banner {
   color: white;
   display: flex;
@@ -84,5 +88,11 @@ a:hover:after {
   img {
     height: 40px;
     width: 40px;
+    cursor: pointer;
   }
+}
+
+.margin-top{
+
+  margin-top: 125px;
 }

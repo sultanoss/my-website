@@ -87,6 +87,8 @@
 .slide {
   
   animation: slideContent 450ms ease-in-out;
+  background-color: unset;
+  margin-top: 125px;
 }
 
 @keyframes slideContent {

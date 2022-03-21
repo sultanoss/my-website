@@ -1,4 +1,4 @@
-<div class="banner">
+<div id="banner" class="banner">
   <div class="my-infos">
     <div class="banner-content">
       <span>Hi,</span>
@@ -13,7 +13,11 @@
     <img id="my-picture" src="assets/img/autorennen.jpg" />
 
     <div class="scroll-down">
-      <img class="scroll-arrow" src="assets/img/scroll-down.png" />
+      <img
+        class="scroll-arrow"
+        src="assets/img/scroll-down.png"
+        (click)="scrollToMyskills()"
+      />
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="aboutMe-content" [class.slide]="router.url == '/about'">
+<div id="about" class="aboutMe-content">
   <div class="aboutMe-infos">
     <img id="my-picture" src="assets/img/autorennen.jpg" />
 
@@ -54,9 +54,5 @@
         I am now looking for new challenges to work as a software developer.
       </p>
     </div>
-  </div>
-
-  <div class="d-none" [class.scroll-down]="router.url == '/about'" (click)="scrollToFooter()">
-    <img class="scroll-arrow" src="assets/img/scroll-down.png" />
   </div>
 </div>

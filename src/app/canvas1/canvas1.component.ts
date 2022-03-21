@@ -7,11 +7,6 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angula
 })
 export class Canvas1Component implements OnInit, AfterViewInit {
 
-  mouse = {
-    x:null,
-    y:null
-  }
-
   @ViewChild('myCanvas') myCanvas!: ElementRef<HTMLCanvasElement>;
   public ctx!: CanvasRenderingContext2D | null;
   ngAfterViewInit(): void {

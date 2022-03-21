@@ -85,6 +85,8 @@ h2 {
 .slide {
   animation: slideContent 450ms ease-in-out;
   height: 100vh;
+  margin-top: 125px;
+  background-color: unset;
 }
 
 @keyframes slideContent {
@@ -95,18 +97,3 @@ h2 {
     transform: translateY(0);
   }
 }
-
-.d-none {
-  display: none;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 24px;
-  display: block;
-
-  img {
-    cursor: pointer;
-  }
-}
-

@@ -9,4 +9,8 @@ import { Router } from '@angular/router';
 export class BannerComponent implements OnInit {
   constructor(public router: Router) {}
   ngOnInit(): void {}
+
+  scrollToMyskills() {
+    document.getElementById('my-skills').scrollIntoView({ behavior: 'smooth' });
+  }
 }
