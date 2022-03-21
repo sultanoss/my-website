@@ -1,5 +1,5 @@
 
-<div class="my-skills">
+<div class="my-skills" [class.slide]="router.url =='/myskills'">
     <h2>My Skills</h2>
 
     <div class="row1">
@@ -73,5 +73,9 @@
             <span>Databases</span>
         </div>
         
+    </div>
+
+    <div class="d-none" [class.scroll-down]="router.url =='/myskills'">
+        <img src="assets/img/scroll-down.png">
     </div>
 </div>

@@ -7,11 +7,10 @@ import { MyWorksComponent } from './my-works/my-works.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { StartComponent } from './start/start.component';
 
-
 const routes: Routes = [
-  { path: '', component:StartComponent},
-  { path: 'imprint', component:ImprintComponent},
-  { path: 'legalnotice', component:LegalNoticeComponent},
+  { path: '', component: StartComponent },
+  { path: 'imprint', component: ImprintComponent },
+  { path: 'legalnotice', component: LegalNoticeComponent },
   { path: 'myWorks', component: MyWorksComponent },
   { path: 'about', component: AboutMeComponent },
   { path: 'myskills', component: MyskillsComponent },
@@ -19,6 +18,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

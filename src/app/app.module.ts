@@ -16,6 +16,7 @@ import { StartComponent } from './start/start.component';
 import { filter } from 'rxjs';
 import { Router, Scroll } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { Canvas1Component } from './canvas1/canvas1.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ViewportScroller } from '@angular/common';
     ImprintComponent,
     LegalNoticeComponent,
     StartComponent,
+    Canvas1Component,
   ],
   imports: [
     BrowserModule,
