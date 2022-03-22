@@ -41,7 +41,7 @@
         font-size: 18px;
         margin-bottom: 18px;
         margin-top: 18px;
-        cursor: pointer;
+        // cursor: pointer;
     }
 
     input{
@@ -123,6 +123,11 @@
       a:hover:after{
         width: 100%;
       }
+}
+
+#my-email{
+
+  cursor: pointer;
 }
 
 

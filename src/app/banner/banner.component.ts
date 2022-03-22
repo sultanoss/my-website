@@ -11,6 +11,10 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {}
 
   scrollToMyskills() {
-    document.getElementById('my-skills').scrollIntoView({ behavior: 'smooth' });
+    document.documentElement.scrollTop = document.body.scrollTop = 965;
+  }
+
+  scrollToContact() {
+    document.documentElement.scrollTop = document.body.scrollTop = 4800;
   }
 }

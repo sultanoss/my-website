@@ -6,18 +6,18 @@
       <span>Front End developer</span>
 
       <div class="wrapper">
-        <a href="#"><span>Contact me</span></a>
+        <a (click)="scrollToContact()"><span>Contact me</span></a>
       </div>
     </div>
 
     <img id="my-picture" src="assets/img/autorennen.jpg" />
 
-    <div class="scroll-down">
-      <img
-        class="scroll-arrow"
-        src="assets/img/scroll-down.png"
-        (click)="scrollToMyskills()"
-      />
+    <div class="scroll-down" (click)="scrollToMyskills()">
+      <div class="container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
     </div>
   </div>
 </div>

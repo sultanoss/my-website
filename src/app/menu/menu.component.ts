@@ -3,28 +3,27 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   scrollToBanner() {
-    document.getElementById('banner').scrollIntoView({behavior:"smooth"});
+    document.documentElement.scrollTop = document.body.scrollTop = 0;
   }
   scrollToMyskills() {
-    document.getElementById('my-skills').scrollIntoView({ behavior: 'smooth' });
+    document.documentElement.scrollTop = document.body.scrollTop = 965;
   }
 
   scrollToMyWorks() {
-    document.getElementById('my-works').scrollIntoView({ behavior: 'smooth' });
+    document.documentElement.scrollTop = document.body.scrollTop = 2015;
   }
 
   scrollToAbout() {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    document.documentElement.scrollTop = document.body.scrollTop = 3925;
   }
-
 }
