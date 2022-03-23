@@ -161,3 +161,56 @@ $base: 0.6rem;
   height: 100px;
   width: 100px;
 }
+
+#span1{
+
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#span2{
+
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  animation-delay: 225ms;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#span3{
+
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  animation-delay: 450ms;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
