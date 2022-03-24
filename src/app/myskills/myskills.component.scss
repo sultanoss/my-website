@@ -30,6 +30,16 @@ h2 {
   justify-content: center;
 }
 
+@keyframes swing {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .row2 {
   display: flex;
   margin-top: 50px;
@@ -98,18 +108,31 @@ h2 {
   }
 }
 
-h2 {
-  animation: myAnim 1s ease 0s 1 normal forwards;
+.scale1 {
+  animation: swing 1s ease 0s 1 normal forwards;
 }
 
-@keyframes myAnim {
+.scale2 {
+  animation: swing 1s ease 0s 1 normal forwards;
+  animation-delay: 450ms;
+}
+
+.scale3 {
+  animation: swing 1s ease 0s 1 normal forwards;
+  animation-delay: 900ms;
+}
+
+.scale4 {
+  animation: swing 1s ease 0s 1 normal forwards;
+  animation-delay: 1350ms;
+}
+
+@keyframes swing {
   0% {
-    opacity: 0;
-    transform: translateX(-250px);
+    transform: scale(0);
   }
 
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    transform: scale(1);
   }
 }

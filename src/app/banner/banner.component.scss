@@ -19,6 +19,7 @@ html {
   width: 80%;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
 
   #my-name {
     color: #fa2759;
@@ -57,6 +58,7 @@ a {
   position: relative;
   transition: all 0.35s;
   border-radius: 6px;
+  background-color: black;
 }
 
 a span {
