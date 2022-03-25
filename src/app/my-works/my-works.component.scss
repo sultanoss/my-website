@@ -37,6 +37,7 @@
     border-radius: 6px;
     margin-right: 10px;
     margin-left: 10px;
+    cursor: pointer;
   }
 
   a span {
@@ -249,5 +250,30 @@ button {
     grid-area: main;
     align-self: center;
     justify-self: center;
+  }
+}
+
+.all-projects{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.slide-left{
+
+  animation: slideleft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

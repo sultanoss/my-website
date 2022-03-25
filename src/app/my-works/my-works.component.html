@@ -7,19 +7,42 @@
 
   <div class="myWorks-btn">
     <div class="wrapper">
-      <a href="#"><span>All</span></a>
+      <a (click)="filterProjects('all')"><span>All</span></a>
     </div>
 
     <div class="wrapper">
-      <a href="#"><span>Angular</span></a>
+      <a (click)="filterProjects('angular')"><span>Angular</span></a>
     </div>
 
     <div class="wrapper">
-      <a href="#"><span>Java Script</span></a>
+      <a (click)="filterProjects('javascript')"><span>Java Script</span></a>
     </div>
   </div>
+  <div class="all-projects">
+  <div *ngFor="let project of filterdProjects; let i = index">
+    <div class="row1" [class.slide-left]="slide">
+    <div class="skill">
+      <img [src]="project.img" [class.filter]="changeText" (mouseover)="changeText=true" (mouseout)="changeText=false"> 
+    <div class="skill-deskription" [class.show-discription]="changeText" (mouseover)="changeText=true">
+      <span>{{project.name}}</span>
+      <p *ngIf="project.description">
+        {{project.description}}
+      </p>
+      <div id="container">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <a [href]="project.url" target="_blank"><span class="button-text">TRY IT OUT</span></a>
+          </button>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
 
-  <div class="row1">
+    <!-- <div class="row1">
     <div class="skill">
         <img src="assets/img/sharkyy.jpg" [class.filter]="changeText" (mouseover)="changeText=true" (mouseout)="changeText=false"> 
       <div class="skill-deskription" [class.show-discription]="changeText" (mouseover)="changeText=true">
@@ -32,7 +55,7 @@
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
-              <span class="button-text">TRY IT OUT</span>
+              <a href="http://radwansultan.de/sharky" target="_blank"><span class="button-text">TRY IT OUT</span></a>
             </button>
           </div>
       </div>
@@ -50,14 +73,14 @@
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
-              <span class="button-text">TRY IT OUT</span>
+              <a href="http://radwansultan.de/join2" target="_blank"><span class="button-text">TRY IT OUT</span></a>
             </button>
           </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div class="row1">
+    <div class="row1">
     <div class="skill">
         <img src="assets/img/pokedex.png" [class.filter]="changeText3" (mouseover)="changeText3=true" (mouseout)="changeText3=false"> 
       <div class="skill-deskription" [class.show-discription]="changeText3" (mouseover)="changeText3=true">
@@ -70,7 +93,7 @@
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
-              <span class="button-text">TRY IT OUT</span>
+              <a href="http://radwansultan.de/pokedex" target="_blank"><span class="button-text">TRY IT OUT</span></a>
             </button>
           </div>
       </div>
@@ -93,9 +116,9 @@
           </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div class="row1">
+    <div class="row1">
     <div class="skill">
         <img src="assets/img/notizbuch.png" [class.filter]="changeText5" (mouseover)="changeText5=true" (mouseout)="changeText5=false"> 
       <div class="skill-deskription" [class.show-discription]="changeText5" (mouseover)="changeText5=true">
@@ -131,9 +154,9 @@
           </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div id="row1" class="row1">
+    <div id="row1" class="row1">
     <div class="skill">
         <img src="assets/img/programmieren_software-entwickler-syntaxhervohebung.jpg" [class.filter]="changeText7" (mouseover)="changeText7=true" (mouseout)="changeText7=false"> 
       <div class="skill-deskription" [class.show-discription]="changeText7" (mouseover)="changeText7=true">
@@ -169,5 +192,5 @@
           </div>
       </div>
     </div>
-  </div>
-</div>
+   </div> -->
+<!-- </div> -->
