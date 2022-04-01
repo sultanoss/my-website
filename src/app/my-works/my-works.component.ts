@@ -14,6 +14,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/sharkyy.jpg',
       url: 'https://radwansultan.de/sharky',
       description: ' Jump and run Game.',
+      changeText: false
     },
     {
       name: 'JOIN',
@@ -21,6 +22,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/join.jpg',
       url: 'http://radwansultan.de/join2',
       description: ' An App to coordinate Work.',
+      changeText: false
     },
     {
       name: 'POKEDEX',
@@ -28,31 +30,56 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/pokedex.png',
       url: 'http://radwansultan.de/pokedex',
       description: '  API-based Colection of Pokemoms.',
+      changeText: false
     },
     {
-      name: 'Mx Quiz App',
+      name: 'My Quiz App',
       category: 'angular',
       img: 'assets/img/quizApp.png',
       url: 'http://radwansultan.de/quizApp',
       description: '  It is a Quiz App.',
+      changeText: false
+    },
+    {
+      name: 'Notice Book',
+      category: 'angular',
+      img: 'assets/img/notizbuch.png',
+      url: 'http://radwansultan.de/notizbuch',
+      description: 'Add,Delete and save your Notices.',
+      changeText: false
+    },
+    {
+      name: 'Incomming',
+      category: 'angular',
+      img: 'assets/img/pexels-photo-546819-1024x680.jpeg',
+      url: '',
+      description: 'Incomming.',
+      changeText: false
+    },
+    {
+      name: 'Incomming',
+      category: 'angular',
+      img: 'assets/img/programmieren_software-entwickler-syntaxhervohebung.jpg',
+      url: '',
+      description: 'Incomming.',
+      changeText: false
+    },
+    {
+      name: 'Incomming',
+      category: 'angular',
+      img: 'assets/img/monitor-for-programming.jpg',
+      url: '',
+      description: 'Incomming.',
+      changeText: false
     },
   ];
 
   filterdProjects = this.projects;
 
-  changeText0: boolean = false;
-  changeText1: boolean = false;
-  changeText2: boolean = false;
-  changeText3: boolean = false;
-  changeText4: boolean = false;
-  changeText5: boolean = false;
-  changeText6: boolean = false;
-  changeText7: boolean = false;
-
   slide: boolean = false;
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   filterProjects(category: string | null) {
     if (category !== 'all') {
@@ -63,13 +90,9 @@ export class MyWorksComponent implements OnInit {
       this.filterdProjects = this.projects;
     }
     this.slide = true;
-    // setTimeout(() => {
-    //   this.reset();
-    // }, 500);
-    
   }
 
-  reset(){
+  reset() {
     this.slide = false;
   }
 }

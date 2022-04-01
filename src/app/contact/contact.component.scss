@@ -34,7 +34,7 @@
         color: #2DFCD8;
     }
 
-    span{
+    span,label{
 
         color: white;
         font-family: Inter;
@@ -83,7 +83,7 @@
     align-self: flex-end;
     margin-top: 20px;
 
-    a{
+    button{
         display: block;
         width: 140px;
         height: 40px;
@@ -98,36 +98,55 @@
         position: relative;
         transition: all .35s;
         border-radius: 6px;
+        background-color: transparent;
+        cursor: pointer;
+        // &:hover{
+        //   background-color: #2DFCD8;
+        // }
       }
       
-      a span{
+      button span{
         position: relative;
-        z-index: 2;
+        // z-index: 2;
       }
       
-      a:after{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #2DFCD8;
-        transition: all .35s;
-      }
+      // button:after{
+      //   position: absolute;
+      //   content: "";
+      //   top: 0;
+      //   left: 0;
+      //   width: 0;
+      //   height: 100%;
+      //   background: #2DFCD8;
+      //   transition: all .35s;
+      // }
       
-      a:hover{
-        color: black;
-      }
+      // button:hover{
+      //   color: black;
+      // }
       
-      a:hover:after{
-        width: 100%;
-      }
+      // button:hover:after{
+      //   width: 100%;
+      // }
 }
 
 #my-email{
 
   cursor: pointer;
+}
+
+.contact-alert{
+  color: white;
+  margin-top: 18px;
+
+  span{
+    color: red;
+  }
+}
+
+.disabled{
+  opacity: 0.5;
+  cursor:unset;
 }
 
 

@@ -1,8 +1,4 @@
-<div
-  id="my-works"
-  class="my-works-content"
-  [class.slide]="router.url == '/myWorks'"
->
+<div id="my-works" class="my-works-content" [class.slide]="router.url == '/myWorks'">
   <h2>My Works</h2>
 
   <div class="myWorks-btn">
@@ -19,30 +15,31 @@
     </div>
   </div>
   <div class="all-projects">
-  <div *ngFor="let project of filterdProjects; let i = index">
-    <div class="row1" [class.slide-left]="slide">
-    <div class="skill">
-      <img [src]="project.img" [class.filter]="changeText" (mouseover)="changeText=true" (mouseout)="changeText=false"> 
-    <div class="skill-deskription" [class.show-discription]="changeText" (mouseover)="changeText=true">
-      <span>{{project.name}}</span>
-      <p *ngIf="project.description">
-        {{project.description}}
-      </p>
-      <div id="container">
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <a [href]="project.url" target="_blank"><span class="button-text">TRY IT OUT</span></a>
-          </button>
+    <div *ngFor="let project of filterdProjects; let i = index">
+      <div class="row1" [class.slide-left]="slide">
+        <div class="skill">
+          <img [src]="project.img" [class.filter]="project.changeText" (mouseover)="project.changeText = true"
+            (mouseout)="project.changeText = false" />
+          <div class="skill-deskription" [class.show-discription]="project.changeText" (mouseover)="project.changeText = true">
+            <span>{{ project.name }}</span>
+            <p *ngIf="project.description">
+              {{ project.description }}
+            </p>
+            <div id="container">
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <a [href]="project.url" target="_blank"><span class="button-text">TRY IT OUT</span></a>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-  </div>
-</div>
-</div>
 
-    <!-- <div class="row1">
+  <!-- <div class="row1">
     <div class="skill">
         <img src="assets/img/sharkyy.jpg" [class.filter]="changeText" (mouseover)="changeText=true" (mouseout)="changeText=false"> 
       <div class="skill-deskription" [class.show-discription]="changeText" (mouseover)="changeText=true">
@@ -193,4 +190,5 @@
       </div>
     </div>
    </div> -->
-<!-- </div> -->
+  <!-- </div> -->
+</div>
