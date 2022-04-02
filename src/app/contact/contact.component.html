@@ -1,4 +1,5 @@
-<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+<form  #contactForm="ngForm"
+ action="https://radwansultan.de/send_mail.php" method="POST">
 
     <div id="contact" class="contact-section">
 
@@ -14,21 +15,22 @@
                 <span>*</span>your name is required.
             </div>
 
-            <label>E-Mail Address</label>
+            <!-- <label>E-Mail Address</label>
             <input [(ngModel)]="email" type="email" name="email" #emailInput="ngModel"
              placeholder="Enter your E-Mail"
              ngModel email="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
               required>
             <div class="contact-alert" *ngIf="emailInput.invalid && emailInput.dirty">
                 <span>*</span>your E-Mail is required.Please enter a valid E-Mail.
-            </div>
+            </div> -->
+
 
             <label>Message</label>
-            <textarea [(ngModel)]="text" type="text" name="text" #textInput="ngModel"
+            <textarea [(ngModel)]="message" type="text" name="message" #messageInput="ngModel"
             placeholder="Enter your Message"
             required>
             </textarea>
-           <div class="contact-alert" *ngIf="textInput.invalid && textInput.dirty">
+           <div class="contact-alert" *ngIf="messageInput.invalid && messageInput.dirty">
                <span>*</span>your Message is required.
            </div>
         </div>

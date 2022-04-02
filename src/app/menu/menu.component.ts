@@ -10,9 +10,8 @@ export class MenuComponent implements OnInit {
 
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   constructor() {}
-
   ngOnInit(): void {
-    console.log(this.scale);
+    
   }
 
   scrollToBanner() {
@@ -21,7 +20,6 @@ export class MenuComponent implements OnInit {
   scrollToMyskills() {
     document.documentElement.scrollTop = document.body.scrollTop = 965;
     this.scale = true;
-    console.log(this.scale);
   }
 
   scrollToMyWorks() {

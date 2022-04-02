@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
@@ -17,6 +16,8 @@ import { Router} from '@angular/router';
 import { Canvas1Component } from './canvas1/canvas1.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NgParticlesModule } from "ng-particles";
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,13 +34,15 @@ import { NgParticlesModule } from "ng-particles";
     StartComponent,
     Canvas1Component,
   ],
+  
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     AnimateOnScrollModule,
     AnimateOnScrollModule.forRoot(),
-    NgParticlesModule
+    NgParticlesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

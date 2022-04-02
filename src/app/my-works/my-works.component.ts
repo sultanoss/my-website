@@ -34,7 +34,7 @@ export class MyWorksComponent implements OnInit {
     },
     {
       name: 'My Quiz App',
-      category: 'angular',
+      category: 'javascript',
       img: 'assets/img/quizApp.png',
       url: 'http://radwansultan.de/quizApp',
       description: '  It is a Quiz App.',
@@ -42,26 +42,26 @@ export class MyWorksComponent implements OnInit {
     },
     {
       name: 'Notice Book',
-      category: 'angular',
+      category: 'javascript',
       img: 'assets/img/notizbuch.png',
       url: 'http://radwansultan.de/notizbuch',
       description: 'Add,Delete and save your Notices.',
       changeText: false
     },
     {
-      name: 'Incomming',
+      name: 'Simple CRM',
       category: 'angular',
       img: 'assets/img/pexels-photo-546819-1024x680.jpeg',
-      url: '',
-      description: 'Incomming.',
+      url: 'https://simplecrm2-963cd.web.app/user',
+      description: 'A simple CRM.',
       changeText: false
     },
     {
-      name: 'Incomming',
+      name: 'Ring of Fire',
       category: 'angular',
       img: 'assets/img/programmieren_software-entwickler-syntaxhervohebung.jpg',
-      url: '',
-      description: 'Incomming.',
+      url: 'https://ringoffire2-b670f.web.app',
+      description: 'The populare drinking Game.',
       changeText: false
     },
     {
