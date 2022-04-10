@@ -10,6 +10,12 @@ export class LegalNoticeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    this.scrollToBanner()
+  }
+
+  scrollToBanner() {
+    document.documentElement.scrollTop = document.body.scrollTop = 0;
   }
 
 }

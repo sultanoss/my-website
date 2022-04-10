@@ -18,6 +18,9 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NgParticlesModule } from "ng-particles";
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     Canvas1Component,
   ],
   
+  
   imports: [
     BrowserModule,
     FormsModule,
@@ -42,7 +46,10 @@ import { HttpClientModule } from '@angular/common/http';
     AnimateOnScrollModule,
     AnimateOnScrollModule.forRoot(),
     NgParticlesModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,12 +6,12 @@ import { Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  @Input()scale:boolean = false;
+  @Input() scale: boolean = false;
 
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  constructor() {}
+  constructor() { }
   ngOnInit(): void {
-    
+
   }
 
   scrollToBanner() {
@@ -29,4 +29,18 @@ export class MenuComponent implements OnInit {
   scrollToAbout() {
     document.documentElement.scrollTop = document.body.scrollTop = 3925;
   }
+
+  showMenu() {
+    document.getElementById('mobile-menu').classList.remove('hide-menu');
+    document.getElementById('mobile-menu').classList.add('show-menu');
+
+  }
+
+  closeMenu() {
+
+    document.getElementById('mobile-menu').classList.add('hide-menu');
+    document.getElementById('mobile-menu').classList.remove('show-menu');
+
+  }
+
 }

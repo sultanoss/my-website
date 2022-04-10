@@ -5,13 +5,29 @@ html {
 .banner {
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 64px;
   background-color: black;
   width: 100%;
   height: 100vh;
   position: relative;
+
+  @media(max-width:1300px) {
+    font-size: 50px;
+  }
+
+  @media(max-width:1150px) {
+    font-size: 45px;
+  }
+
+  @media(max-width:1024px) {
+    font-size: 55px;
+  }
+
+  @media(max-width:880px) {
+    font-size: 50px;
+  }
 }
 
 .my-infos {
@@ -31,16 +47,71 @@ html {
   width: 300px;
   border-radius: 50%;
   object-fit: cover;
+
+  @media(max-width:1300px) {
+
+    width: 270px;
+    height: 270px;
+  }
+
+  @media(max-width:1300px) {
+
+    width: 250px;
+    height: 250px;
+  }
+
+  @media(max-width:1024px) {
+
+    position: absolute;
+    top: 240px;
+  }
+
+  @media(max-width:550px) {
+
+    position: absolute;
+    top: 240px;
+    height: 200px;
+    width: 200px;
+  }
+
 }
 
 .banner-content {
   display: flex;
   flex-direction: column;
+
+  @media(max-width:1024px) {
+    position: absolute;
+    bottom: 184px;
+
+  }
+
+  @media(max-width:550px) {
+    font-size: 40px;
+    position: absolute;
+    bottom: 250px;
+
+  }
+
+  @media(max-width:550px) {
+    font-size: 30px;
+    position: absolute;
+    bottom: 250px;
+
+  }
+
 }
 
 .wrapper {
   margin-top: 75px;
-  cursor: pointer;
+
+  @media(max-width:1024px) {
+    align-self: end;
+  }
+
+  @media(max-width:880px) {
+    align-self: center;
+  }
 }
 
 a {
@@ -59,6 +130,10 @@ a {
   transition: all 0.35s;
   border-radius: 6px;
   background-color: black;
+
+  @media(max-width: 550px) {
+    width: 150px;
+  }
 }
 
 a span {
@@ -93,7 +168,6 @@ $base: 0.6rem;
   align-items: center;
   position: absolute;
   bottom: 100px;
-  cursor: pointer;
 }
 
 .chevron {
@@ -103,7 +177,6 @@ $base: 0.6rem;
   opacity: 0;
   transform: scale(0.3);
   animation: move-chevron 3s ease-out infinite;
-  cursor: pointer;
 }
 
 .chevron:first-child {
@@ -139,14 +212,17 @@ $base: 0.6rem;
   25% {
     opacity: 1;
   }
+
   33.3% {
     opacity: 1;
     transform: translateY($base * 3.8);
   }
+
   66.6% {
     opacity: 1;
     transform: translateY($base * 5.2);
   }
+
   100% {
     opacity: 0;
     transform: translateY($base * 8) scale(0.5);
@@ -159,12 +235,12 @@ $base: 0.6rem;
   align-items: center;
   position: absolute;
   bottom: 0px;
-  cursor: pointer;
+
   height: 100px;
   width: 100px;
 }
 
-#span1{
+#span1 {
 
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
@@ -181,7 +257,7 @@ $base: 0.6rem;
   }
 }
 
-#span2{
+#span2 {
 
   animation: myAnim 1s ease 0s 1 normal forwards;
   animation-delay: 225ms;
@@ -199,20 +275,8 @@ $base: 0.6rem;
   }
 }
 
-#span3{
+#span3 {
 
   animation: myAnim 1s ease 0s 1 normal forwards;
   animation-delay: 450ms;
-}
-
-@keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }

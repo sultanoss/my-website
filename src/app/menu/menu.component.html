@@ -1,8 +1,19 @@
 <nav>
   <ul class="menu">
-    <li><a routerLink="/" (click)="scrollToBanner()">Home</a></li>
-    <li><a (click)="scrollToMyskills()">My Skills</a></li>
-    <li><a (click)="scrollToMyWorks()">My Works</a></li>
-    <li><a (click)="scrollToAbout()">About me</a></li>
+    <li><a href="#banner">Home</a></li>
+    <li><a href="#my-skills">My Skills</a></li>
+    <li><a href="#my-works">My Works</a></li>
+    <li><a href="#about">About me</a></li>
   </ul>
 </nav>
+
+<img id="menu-img" src="assets/img/mobileMenu.png" (click)="showMenu()">
+
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#banner">Home</a>
+  <a href="#my-skills">My Skills</a>
+  <a href="#my-works">My Works</a>
+  <a href="#about">About me</a>
+  <img id="link5" src="assets/img/arroeLeft.png" (click)="closeMenu()">
+</div>
+

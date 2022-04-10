@@ -1,5 +1,4 @@
-<form  #contactForm="ngForm"
- action="https://radwansultan.de/send_mail.php" method="POST">
+<form id="contact" (ngSubmit)="handleSubmit(contactForm)"  #contactForm="ngForm">
 
     <div id="contact" class="contact-section">
 
@@ -15,14 +14,14 @@
                 <span>*</span>your name is required.
             </div>
 
-            <!-- <label>E-Mail Address</label>
+            <label>E-Mail Address</label>
             <input [(ngModel)]="email" type="email" name="email" #emailInput="ngModel"
              placeholder="Enter your E-Mail"
              ngModel email="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
               required>
             <div class="contact-alert" *ngIf="emailInput.invalid && emailInput.dirty">
                 <span>*</span>your E-Mail is required.Please enter a valid E-Mail.
-            </div> -->
+            </div>
 
 
             <label>Message</label>
@@ -36,7 +35,7 @@
         </div>
 
         <div class="wrapper">
-           <button type="submit" (click)="handleSend()" [class.disabled]="contactForm.invalid" [disabled]="contactForm.invalid"><span>Send</span></button>
+           <button type="submit" [class.disabled]="contactForm.invalid" [disabled]="contactForm.invalid"><span>Send</span></button>
         </div>
 
     </div>
