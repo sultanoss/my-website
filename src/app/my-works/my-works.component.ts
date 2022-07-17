@@ -49,11 +49,19 @@ export class MyWorksComponent implements OnInit {
       changeText: false
     },
     {
-      name: 'Simple CRM',
+      name: 'Slack Clone',
       category: 'angular',
-      img: 'assets/img/pexels-photo-546819-1024x680.jpeg',
-      url: 'https://simplecrm2-963cd.web.app/user',
-      description: 'A simple CRM.',
+      img: 'assets/img/slack4.jpg',
+      url: 'https://slack-clone-88afb.firebaseapp.com',
+      description: 'Slack Clone with Angular.',
+      changeText: false
+    },
+    {
+      name: 'ToDo List',
+      category: 'angular',
+      img: 'assets/img/todo.png',
+      url: 'https://todo-list-aa856.web.app',
+      description: 'Todo List with Users accounts and Alarm.',
       changeText: false
     },
     {
@@ -65,11 +73,11 @@ export class MyWorksComponent implements OnInit {
       changeText: false
     },
     {
-      name: 'Incomming',
+      name: 'Food Shop',
       category: 'angular',
-      img: 'assets/img/monitor-for-programming.jpg',
+      img: 'assets/img/foodshop2.jpg',
       url: '',
-      description: 'Incomming.',
+      description: 'Food Shop with Angular.',
       changeText: false
     },
   ];
