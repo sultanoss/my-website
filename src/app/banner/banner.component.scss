@@ -60,6 +60,52 @@ html {
   }
 }
 
+@media (orientation:landscape) and (max-width:844px) {
+  .my-infos{
+    flex-direction: unset;
+    font-size: 20px;
+    img{
+      width: 150px !important;
+      height: 150px !important;
+    }
+    .wrapper{
+      margin-top: 20px;
+      a{
+        width: 170px;
+        height: 40px;
+        line-height: 39px;
+        font-size: 15px;
+      }
+    }
+  }
+  .show-menu{
+    height: 70vh !important;
+  }
+ }
+
+ @media (orientation:landscape) and (max-width:1024px) {
+  .my-infos{
+    flex-direction: unset;
+    font-size: 20px;
+    img{
+      width: 150px !important;
+      height: 150px !important;
+    }
+    .wrapper{
+      margin-top: 20px;
+      a{
+        width: 170px;
+        height: 40px;
+        line-height: 39px;
+        font-size: 15px;
+      }
+    }
+  }
+  .show-menu{
+    height: 70vh !important;
+  }
+ }
+
 #my-picture {
   height: 300px;
   width: 300px;

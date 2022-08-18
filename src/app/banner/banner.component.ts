@@ -123,11 +123,11 @@ export class BannerComponent implements OnInit {
   constructor(public router: Router) {}
   ngOnInit(): void {}
 
-  scrollToMyskills() {
-    document.documentElement.scrollTop = document.body.scrollTop = 965;
-  }
-
-  scrollToContact() {
-    document.documentElement.scrollTop = document.body.scrollTop = 4800;
+  scrolltoContact() {
+    let el = document.getElementById('contact');
+    el?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
   }
 }

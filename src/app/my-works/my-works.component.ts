@@ -65,21 +65,21 @@ export class MyWorksComponent implements OnInit {
       changeText: false
     },
     {
-      name: 'Ring of Fire',
+      name: 'Hypercampus-Nuggets',
       category: 'angular',
-      img: 'assets/img/programmieren_software-entwickler-syntaxhervohebung.jpg',
-      url: 'https://ringoffire2-b670f.web.app',
-      description: 'The populare drinking Game.',
+      img: 'assets/img/e-health.png',
+      url: 'https://hypercampus-nuggets.firebaseapp.com/home',
+      description: 'E-Health learning Nuggets.',
       changeText: false
     },
-    {
-      name: 'Food Shop',
-      category: 'angular',
-      img: 'assets/img/foodshop2.jpg',
-      url: '',
-      description: 'Food Shop with Angular.',
-      changeText: false
-    },
+    // {
+    //   name: 'Food Shop',
+    //   category: 'angular',
+    //   img: 'assets/img/foodshop2.jpg',
+    //   url: '',
+    //   description: 'Food Shop with Angular.',
+    //   changeText: false
+    // },
   ];
 
   filterdProjects = this.projects;

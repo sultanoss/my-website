@@ -12,7 +12,6 @@ html {
 }
 
 nav {
-
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,9 +34,8 @@ nav {
   height: 120px;
   position: fixed;
   background-color: black;
-  border-bottom: 1px solid #2DFCD8;
+  border-bottom: 1px solid #2dfcd8;
 }
-
 
 .menu li {
   width: 125px;
@@ -60,7 +58,7 @@ nav {
   }
 
   &:hover a {
-    color: #FA2759;
+    color: #fa2759;
   }
 
   &:not(:last-child) {
@@ -75,7 +73,7 @@ nav {
 }
 
 nav {
-  @media(max-width:880px) {
+  @media (max-width: 880px) {
     display: none;
   }
 }
@@ -85,7 +83,7 @@ nav {
   width: 100%;
   justify-content: center;
   position: absolute;
-  top: 100px;
+  top: 92px;
   z-index: 1;
   transform: translateX(-780px);
   display: flex;
@@ -108,14 +106,13 @@ nav {
     &:hover {
       transform: scale(1.05);
       transition: all 225ms ease-in-out;
-      border: 1px solid #FA2759;
+      border: 1px solid #fa2759;
     }
 
-    @media(min-width:880px){
+    @media (min-width: 880px) {
       display: none;
     }
   }
-
 }
 
 #menu-img {
@@ -128,25 +125,28 @@ nav {
   display: none;
   cursor: pointer;
 
-  @media(max-width:880px){
+  @media (max-width: 880px) {
     display: block;
   }
 }
-
-
-.show-menu {
-
- transform: translateX(0px);
- transition: all 225ms ease-in-out;
- background-color: black;
- z-index: 3;
- height: 405px;
-
- @media(min-width:880px){
-   display: none;
- }
+@media (orientation: landscape) and (max-width: 851px) {
+  .show-menu {
+    height: 70vh !important;
+  }
 }
 
+.show-menu {
+  transform: translateX(0px);
+  transition: all 225ms ease-in-out;
+  background-color: black;
+  z-index: 3;
+  //  height: 405px;
+  height: 80vh;
+
+  @media (min-width: 880px) {
+    display: none;
+  }
+}
 
 #link5 {
   margin-top: 15px;
@@ -155,12 +155,12 @@ nav {
   margin-left: 20px;
   cursor: pointer;
 
-  @media(min-width:880px){
+  @media (min-width: 880px) {
     display: none;
   }
 }
 
 .hide-menu {
- transform: translateX(-780px);
- transition: all 225ms ease-in-out;
+  transform: translateX(-780px);
+  transition: all 225ms ease-in-out;
 }
