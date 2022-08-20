@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { HotToastService } from '@ngneat/hot-toast';
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +16,8 @@ export class ContactComponent implements OnInit {
 
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+    private toast: HotToastService,) { }
 
   ngOnInit(): void {
   }
@@ -39,7 +41,7 @@ export class ContactComponent implements OnInit {
     .subscribe(
      {
        next :  (response)=> {
-         window.alert("Message Received");
+        this.toast.success('Message sent successfully 👍');
        },
        error : (error)=> console.error(error)
      }

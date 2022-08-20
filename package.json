@@ -20,6 +20,8 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@ngneat/hot-toast": "^4.1.0",
+    "@ngneat/overview": "^3.0.0",
     "ng-particles": "^2.42.4",
     "ng2-animate-on-scroll": "^2.3.2",
     "rxjs": "~7.5.0",

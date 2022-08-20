@@ -21,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { HotToastModule } from '@ngneat/hot-toast';
+
 
 @NgModule({
   declarations: [
@@ -37,8 +39,8 @@ import {MatButtonModule} from '@angular/material/button';
     StartComponent,
     Canvas1Component,
   ],
-  
-  
+
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -49,15 +51,16 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    HotToastModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 
   constructor(router: Router) {
 
   }
-  
+
 }

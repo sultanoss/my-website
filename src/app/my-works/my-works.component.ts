@@ -12,7 +12,7 @@ export class MyWorksComponent implements OnInit {
       name: 'Sharky',
       category: 'javascript',
       img: 'assets/img/sharkyy.jpg',
-      url: 'https://radwansultan.de/sharky',
+      url: 'http://radwansultan.de/Sharky',
       description: ' Jump and run Game.',
       changeText: false
     },
