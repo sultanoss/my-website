@@ -14,15 +14,15 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/sharkyy.jpg',
       url: 'http://radwansultan.de/Sharky',
       description: ' Jump and run Game.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'JOIN',
       category: 'javascript',
       img: 'assets/img/join.jpg',
-      url: 'http://radwansultan.de/join2',
+      url: 'http://radwansultan.de/join',
       description: ' An App to coordinate Work.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'POKEDEX',
@@ -30,7 +30,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/pokedex.png',
       url: 'http://radwansultan.de/pokedex',
       description: '  API-based Colection of Pokemoms.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'My Quiz App',
@@ -38,7 +38,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/quizApp.png',
       url: 'http://radwansultan.de/quizApp',
       description: '  It is a Quiz App.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'Notice Book',
@@ -46,7 +46,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/notizbuch.png',
       url: 'http://radwansultan.de/notizbuch',
       description: 'Add,Delete and save your Notices.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'Slack Clone',
@@ -54,7 +54,7 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/slack4.jpg',
       url: 'https://slack-clone-88afb.firebaseapp.com',
       description: 'Slack Clone with Angular.',
-      changeText: false
+      changeText: false,
     },
     {
       name: 'ToDo List',
@@ -62,7 +62,15 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/todo.png',
       url: 'https://todo-list-aa856.web.app',
       description: 'Todo List with Users accounts and Alarm.',
-      changeText: false
+      changeText: false,
+    },
+    {
+      name: 'Games Library',
+      category: 'angular',
+      img: 'assets/img/gamesLibrary.png',
+      url: 'https://games-library-fefc9.firebaseapp.com',
+      description: ' API-based Colection of Games.',
+      changeText: false,
     },
     {
       name: 'Hypercampus-Nuggets',
@@ -70,24 +78,32 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/e-health.png',
       url: 'https://hypercampus-nuggets.firebaseapp.com/home',
       description: 'E-Health learning Nuggets.',
+      changeText: false,
+    },
+    {
+      name: 'Hotel Reservation App',
+      category: 'angular',
+      img: 'assets/img/hotelapp.jpg',
+      url: 'https://hotel-reservation-da931.firebaseapp.com/bookings',
+      description: 'Hotel Booking App.',
+      changeText: false,
+    },
+    {
+      name: 'Food Shop',
+      category: 'angular',
+      img: 'assets/img/foodshop2.jpg',
+      url: 'https://food-shop-19621.web.app/',
+      description: 'Food Shop with Angular.',
       changeText: false
     },
-    // {
-    //   name: 'Food Shop',
-    //   category: 'angular',
-    //   img: 'assets/img/foodshop2.jpg',
-    //   url: '',
-    //   description: 'Food Shop with Angular.',
-    //   changeText: false
-    // },
   ];
 
   filterdProjects = this.projects;
 
   slide: boolean = false;
-  constructor(public router: Router) { }
+  constructor(public router: Router) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   filterProjects(category: string | null) {
     if (category !== 'all') {
