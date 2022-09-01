@@ -9,46 +9,6 @@ import { Router } from '@angular/router';
 export class MyWorksComponent implements OnInit {
   projects = [
     {
-      name: 'Sharky',
-      category: 'javascript',
-      img: 'assets/img/sharkyy.jpg',
-      url: 'http://radwansultan.de/Sharky',
-      description: ' Jump and run Game.',
-      changeText: false,
-    },
-    {
-      name: 'JOIN',
-      category: 'javascript',
-      img: 'assets/img/join.jpg',
-      url: 'http://radwansultan.de/join',
-      description: ' An App to coordinate Work.',
-      changeText: false,
-    },
-    {
-      name: 'POKEDEX',
-      category: 'javascript',
-      img: 'assets/img/pokedex.png',
-      url: 'http://radwansultan.de/pokedex',
-      description: '  API-based Colection of Pokemoms.',
-      changeText: false,
-    },
-    {
-      name: 'My Quiz App',
-      category: 'javascript',
-      img: 'assets/img/quizApp.png',
-      url: 'http://radwansultan.de/quizApp',
-      description: '  It is a Quiz App.',
-      changeText: false,
-    },
-    {
-      name: 'Notice Book',
-      category: 'javascript',
-      img: 'assets/img/notizbuch.png',
-      url: 'http://radwansultan.de/notizbuch',
-      description: 'Add,Delete and save your Notices.',
-      changeText: false,
-    },
-    {
       name: 'Slack Clone',
       category: 'angular',
       img: 'assets/img/slack4.jpg',
@@ -65,6 +25,30 @@ export class MyWorksComponent implements OnInit {
       changeText: false,
     },
     {
+      name: 'Hypercampus-Nuggets',
+      category: 'angular',
+      img: 'assets/img/e-health.png',
+      url: 'https://hypercampus-nuggets.firebaseapp.com/home',
+      description: 'E-Health learning Nuggets.',
+      changeText: false,
+    },
+    {
+      name: 'Sharky',
+      category: 'javascript',
+      img: 'assets/img/sharkyy.jpg',
+      url: 'http://radwansultan.de/Sharky',
+      description: ' Jump and run Game.',
+      changeText: false,
+    },
+    {
+      name: 'JOIN',
+      category: 'javascript',
+      img: 'assets/img/join.jpg',
+      url: 'http://radwansultan.de/join',
+      description: ' An App to coordinate Work.',
+      changeText: false,
+    },
+    {
       name: 'Games Library',
       category: 'angular',
       img: 'assets/img/gamesLibrary.png',
@@ -73,13 +57,30 @@ export class MyWorksComponent implements OnInit {
       changeText: false,
     },
     {
-      name: 'Hypercampus-Nuggets',
-      category: 'angular',
-      img: 'assets/img/e-health.png',
-      url: 'https://hypercampus-nuggets.firebaseapp.com/home',
-      description: 'E-Health learning Nuggets.',
+      name: 'POKEDEX',
+      category: 'javascript',
+      img: 'assets/img/pokedex.png',
+      url: 'http://radwansultan.de/pokedex',
+      description: '  API-based Colection of Pokemoms.',
       changeText: false,
     },
+    // {
+    //   name: 'My Quiz App',
+    //   category: 'javascript',
+    //   img: 'assets/img/quizApp.png',
+    //   url: 'http://radwansultan.de/quizApp',
+    //   description: '  It is a Quiz App.',
+    //   changeText: false,
+    // },
+    {
+      name: 'Notice Book',
+      category: 'javascript',
+      img: 'assets/img/notizbuch.png',
+      url: 'http://radwansultan.de/notizbuch',
+      description: 'Add,Delete and save your Notices.',
+      changeText: false,
+    },
+
     {
       name: 'Hotel Reservation App',
       category: 'angular',
@@ -94,7 +95,16 @@ export class MyWorksComponent implements OnInit {
       img: 'assets/img/foodshop2.jpg',
       url: 'https://food-shop-19621.web.app/',
       description: 'Food Shop with Angular.',
-      changeText: false
+      changeText: false,
+    },
+
+    {
+      name: 'Monster Slayer',
+      category: 'vue',
+      img: 'assets/img/monsterslayer.png',
+      url: 'https://radwansultan.de/prj-monster-01-starting-setup',
+      description: 'A Browser Game with Vue.',
+      changeText: false,
     },
   ];
 
