@@ -1,4 +1,8 @@
-<div id="my-works" class="my-works-content" [class.slide]="router.url == '/myWorks'">
+<div
+  id="my-works"
+  class="my-works-content"
+  [class.slide]="router.url == '/myWorks'"
+>
   <h2>My Works</h2>
 
   <div class="myWorks-btn">
@@ -20,21 +24,38 @@
   </div>
   <div class="all-projects">
     <div *ngFor="let project of filterdProjects; let i = index">
-      <div class="row1" [class.slide-left]="slide">
+      <div
+        class="row1"
+        [class.slide-left]="slide"
+      >
         <div class="skill">
-          <img [src]="project.img" [class.filter]="project.changeText" (mouseover)="project.changeText = true"
-            (mouseout)="project.changeText = false" />
-          <div class="skill-deskription" [class.show-discription]="project.changeText" (mouseover)="project.changeText = true">
+          <img
+            [src]="project.img"
+            [class.filter]="project.changeText"
+            (mouseover)="project.changeText = true"
+            (mouseout)="project.changeText = false"
+          />
+          <div
+            class="skill-deskription"
+            [class.show-discription]="project.changeText"
+            (mouseover)="project.changeText = true"
+          >
             <span>{{ project.name }}</span>
             <p *ngIf="project.description">
               {{ project.description }}
             </p>
             <div id="container">
               <button class="learn-more">
-                <span class="circle" aria-hidden="true">
+                <span
+                  class="circle"
+                  aria-hidden="true"
+                >
                   <span class="icon arrow"></span>
                 </span>
-                <a [href]="project.url" target="_blank"><span class="button-text">TRY IT OUT</span></a>
+                <a
+                  [href]="project.url"
+                  target="_blank"
+                ><span class="button-text">TRY IT OUT</span></a>
               </button>
             </div>
           </div>
@@ -42,157 +63,4 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="row1">
-    <div class="skill">
-        <img src="assets/img/sharkyy.jpg" [class.filter]="changeText" (mouseover)="changeText=true" (mouseout)="changeText=false">
-      <div class="skill-deskription" [class.show-discription]="changeText" (mouseover)="changeText=true">
-        <span>SHARKY</span>
-        <p>
-           Jump and run Game.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <a href="http://radwansultan.de/sharky" target="_blank"><span class="button-text">TRY IT OUT</span></a>
-            </button>
-          </div>
-      </div>
-    </div>
-
-    <div class="skill">
-        <img src="assets/img/join.jpg" [class.filter]="changeText2" (mouseover)="changeText2=true" (mouseout)="changeText2=false">
-      <div class="skill-deskription" [class.show-discription]="changeText2" (mouseover)="changeText2=true">
-        <span>JOIN</span>
-        <p>
-            An App to coordinate Work.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <a href="http://radwansultan.de/join2" target="_blank"><span class="button-text">TRY IT OUT</span></a>
-            </button>
-          </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="row1">
-    <div class="skill">
-        <img src="assets/img/pokedex.png" [class.filter]="changeText3" (mouseover)="changeText3=true" (mouseout)="changeText3=false">
-      <div class="skill-deskription" [class.show-discription]="changeText3" (mouseover)="changeText3=true">
-        <span>POKEDEX</span>
-        <p>
-           API-based Colection of Pokemoms.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <a href="http://radwansultan.de/pokedex" target="_blank"><span class="button-text">TRY IT OUT</span></a>
-            </button>
-          </div>
-      </div>
-    </div>
-
-    <div class="skill">
-        <img src="assets/img/quizApp.png" [class.filter]="changeText4" (mouseover)="changeText4=true" (mouseout)="changeText4=false">
-      <div class="skill-deskription" [class.show-discription]="changeText4" (mouseover)="changeText4=true">
-        <span>My QuizApp</span>
-        <p>
-            It is a Quiz App.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">TRY IT OUT</span>
-            </button>
-          </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="row1">
-    <div class="skill">
-        <img src="assets/img/notizbuch.png" [class.filter]="changeText5" (mouseover)="changeText5=true" (mouseout)="changeText5=false">
-      <div class="skill-deskription" [class.show-discription]="changeText5" (mouseover)="changeText5=true">
-        <span>Notice Book</span>
-        <p>
-           Add,Delete and save your Notice.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">TRY IT OUT</span>
-            </button>
-          </div>
-      </div>
-    </div>
-
-    <div class="skill">
-        <img src="assets/img/pexels-photo-546819-1024x680.jpeg" [class.filter]="changeText6" (mouseover)="changeText6=true" (mouseout)="changeText6=false">
-      <div class="skill-deskription" [class.show-discription]="changeText6" (mouseover)="changeText6=true">
-        <span>Incomming</span>
-        <p>
-            Incomming.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">TRY IT OUT</span>
-            </button>
-          </div>
-      </div>
-    </div>
-    </div>
-
-    <div id="row1" class="row1">
-    <div class="skill">
-        <img src="assets/img/programmieren_software-entwickler-syntaxhervohebung.jpg" [class.filter]="changeText7" (mouseover)="changeText7=true" (mouseout)="changeText7=false">
-      <div class="skill-deskription" [class.show-discription]="changeText7" (mouseover)="changeText7=true">
-        <span>Incomming</span>
-        <p>
-           Incomming.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">TRY IT OUT</span>
-            </button>
-          </div>
-      </div>
-    </div>
-
-    <div class="skill">
-        <img src="assets/img/monitor-for-programming.jpg" [class.filter]="changeText8" (mouseover)="changeText8=true" (mouseout)="changeText8=false">
-      <div class="skill-deskription" [class.show-discription]="changeText8" (mouseover)="changeText8=true">
-        <span>Incomming</span>
-        <p>
-            Incomming.
-        </p>
-        <div id="container">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">TRY IT OUT</span>
-            </button>
-          </div>
-      </div>
-    </div>
-   </div> -->
-  <!-- </div> -->
 </div>

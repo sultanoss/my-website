@@ -4,14 +4,10 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
-  styleUrls: ['./start.component.scss']
+  styleUrls: ['./start.component.scss'],
 })
 export class StartComponent implements OnInit {
+  constructor(public router: Router) {}
 
-
-  constructor(public router:Router) { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

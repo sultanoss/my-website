@@ -1,5 +1,4 @@
 .contact-section {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,28 +8,25 @@
 }
 
 .contact-content {
-
   display: flex;
   flex-direction: column;
   margin-top: 75px;
 
   h2 {
-
-    color: #2DFCD8;
+    color: #2dfcd8;
     font-size: 64px;
     font-family: Inter;
     margin: 0;
 
-    @media(max-width:650px){
+    @media (max-width: 650px) {
       font-size: 50px;
     }
-    @media(max-width:380px){
+    @media (max-width: 380px) {
       font-size: 40px;
     }
   }
 
   p {
-
     color: white;
     font-size: 18px;
     font-family: Inter;
@@ -38,13 +34,11 @@
   }
 
   #my-email {
-
-    color: #2DFCD8;
+    color: #2dfcd8;
   }
 
   span,
   label {
-
     color: white;
     font-family: Inter;
     font-size: 18px;
@@ -53,9 +47,8 @@
   }
 
   input {
-
     height: 39px;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     outline: none;
     border: none;
     padding: 18px;
@@ -64,9 +57,8 @@
   }
 
   textarea {
-
     height: 179px;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     outline: none;
     resize: none;
     border: none;
@@ -79,14 +71,11 @@
   }
 
   ::placeholder {
-
     color: #989898;
   }
-
 }
 
 .wrapper {
-
   margin-bottom: 75px;
   align-self: flex-end;
   margin-top: 20px;
@@ -99,12 +88,12 @@
     font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
-    color: #2DFCD8;
-    border: 2px solid #2DFCD8;
+    color: #2dfcd8;
+    border: 2px solid #2dfcd8;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
-    transition: all .35s;
+    transition: all 0.35s;
     border-radius: 6px;
     background-color: transparent;
     cursor: pointer;
@@ -113,9 +102,7 @@
   button span {
     position: relative;
   }
-
 }
-
 
 .contact-alert {
   color: white;
@@ -129,4 +116,12 @@
 .disabled {
   opacity: 0.5;
   cursor: unset;
+}
+
+.visibleMainmenu {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }

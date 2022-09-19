@@ -4,15 +4,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-myskills',
   templateUrl: './myskills.component.html',
-  styleUrls: ['./myskills.component.scss']
+  styleUrls: ['./myskills.component.scss'],
 })
 export class MyskillsComponent implements OnInit {
+  @Input() scale: boolean = false;
 
-  @Input()scale:boolean = false;
+  constructor(public router: Router) {}
 
-  constructor(public router:Router) { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

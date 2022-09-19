@@ -25,14 +25,6 @@ export class MyWorksComponent implements OnInit {
       changeText: false,
     },
     {
-      name: 'Hypercampus-Nuggets',
-      category: 'angular',
-      img: 'assets/img/e-health.png',
-      url: 'https://hypercampus-nuggets.firebaseapp.com/home',
-      description: 'E-Health learning Nuggets.',
-      changeText: false,
-    },
-    {
       name: 'Sharky',
       category: 'javascript',
       img: 'assets/img/sharkyy.jpg',
@@ -49,14 +41,6 @@ export class MyWorksComponent implements OnInit {
       changeText: false,
     },
     {
-      name: 'Games Library',
-      category: 'angular',
-      img: 'assets/img/gamesLibrary.png',
-      url: 'https://games-library-fefc9.firebaseapp.com',
-      description: ' API-based Colection of Games.',
-      changeText: false,
-    },
-    {
       name: 'POKEDEX',
       category: 'javascript',
       img: 'assets/img/pokedex.png',
@@ -64,37 +48,12 @@ export class MyWorksComponent implements OnInit {
       description: '  API-based Colection of Pokemoms.',
       changeText: false,
     },
-    // {
-    //   name: 'My Quiz App',
-    //   category: 'javascript',
-    //   img: 'assets/img/quizApp.png',
-    //   url: 'http://radwansultan.de/quizApp',
-    //   description: '  It is a Quiz App.',
-    //   changeText: false,
-    // },
     {
       name: 'Notice Book',
       category: 'javascript',
       img: 'assets/img/notizbuch.png',
       url: 'http://radwansultan.de/notizbuch',
       description: 'Add,Delete and save your Notices.',
-      changeText: false,
-    },
-
-    {
-      name: 'Hotel Reservation App',
-      category: 'angular',
-      img: 'assets/img/hotelapp.jpg',
-      url: 'https://hotel-reservation-da931.firebaseapp.com/bookings',
-      description: 'Hotel Booking App.',
-      changeText: false,
-    },
-    {
-      name: 'Food Shop',
-      category: 'angular',
-      img: 'assets/img/foodshop2.jpg',
-      url: 'https://food-shop-19621.web.app/',
-      description: 'Food Shop with Angular.',
       changeText: false,
     },
 

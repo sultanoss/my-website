@@ -12,6 +12,12 @@ html {
   width: 100%;
   height: 100vh;
   position: relative;
+  @media only screen and (orientation: portrait) {
+    body {
+      height: 100vw;
+      transform: rotate(90deg);
+    }
+  }
 
   @media (max-width: 1300px) {
     font-size: 50px;
@@ -20,15 +26,7 @@ html {
   @media (max-width: 1150px) {
     font-size: 45px;
   }
-
-  @media (max-width: 1024px) {
-    font-size: 55px;
-  }
-
-  @media (max-width: 880px) {
-    font-size: 50px;
-  }
-  @media (max-width: 580px) {
+  @media (max-width: 650px) {
     font-size: 40px;
   }
   @media (max-width: 480px) {
@@ -36,6 +34,9 @@ html {
   }
   @media (max-width: 380px) {
     font-size: 20px;
+  }
+  @media (max-height: 375px) and (orientation: landscape) {
+    font-size: 24px;
   }
 }
 
@@ -48,63 +49,12 @@ html {
 
   @media (max-width: 1024px) {
     flex-direction: column-reverse;
-    margin-top: 120px;
-  }
-  @media (max-width: 880px) {
-    flex-direction: column-reverse;
-    margin-top: unset;
   }
 
   #my-name {
     color: #fa2759;
   }
 }
-
-@media (orientation:landscape) and (max-width:844px) {
-  .my-infos{
-    flex-direction: unset;
-    font-size: 20px;
-    img{
-      width: 150px !important;
-      height: 150px !important;
-    }
-    .wrapper{
-      margin-top: 20px;
-      a{
-        width: 170px;
-        height: 40px;
-        line-height: 39px;
-        font-size: 15px;
-      }
-    }
-  }
-  .show-menu{
-    height: 70vh !important;
-  }
- }
-
- @media (orientation:landscape) and (max-width:1024px) {
-  .my-infos{
-    flex-direction: unset;
-    font-size: 20px;
-    img{
-      width: 150px !important;
-      height: 150px !important;
-    }
-    .wrapper{
-      margin-top: 20px;
-      a{
-        width: 170px;
-        height: 40px;
-        line-height: 39px;
-        font-size: 15px;
-      }
-    }
-  }
-  .show-menu{
-    height: 70vh !important;
-  }
- }
 
 #my-picture {
   height: 300px;
@@ -113,20 +63,15 @@ html {
   object-fit: cover;
   object-position: 50% 7%;
 
-  // @media(max-width:1300px) {
-
-  //   width: 270px;
-  //   height: 270px;
-  // }
-
   @media (max-width: 1300px) {
     width: 250px;
     height: 250px;
   }
-  @media (max-width: 580px) {
+  @media (max-width: 1024px) {
     width: 200px;
     height: 200px;
   }
+
   @media (max-width: 480px) {
     width: 150px;
     height: 150px;
@@ -135,45 +80,14 @@ html {
     width: 120px;
     height: 120px;
   }
-
-  // @media(max-width:1024px) {
-
-  //   position: absolute;
-  //   top: 240px;
-  // }
-
-  // @media(max-width:550px) {
-
-  //   position: absolute;
-  //   top: 240px;
-  //   height: 200px;
-  //   width: 200px;
-  // }
+  @media (max-width: 915px) and (orientation: landscape) {
+    display: none;
+  }
 }
 
 .banner-content {
   display: flex;
   flex-direction: column;
-
-  // @media(max-width:1024px) {
-  //   position: absolute;
-  //   bottom: 184px;
-
-  // }
-
-  // @media(max-width:550px) {
-  //   font-size: 40px;
-  //   position: absolute;
-  //   bottom: 250px;
-
-  // }
-
-  // @media(max-width:550px) {
-  //   font-size: 30px;
-  //   position: absolute;
-  //   bottom: 250px;
-
-  // }
 }
 
 .wrapper {
@@ -181,10 +95,11 @@ html {
 
   @media (max-width: 1024px) {
     align-self: end;
+    margin-top: 20px;
   }
-
-  @media (max-width: 880px) {
+  @media (max-width: 768px) {
     align-self: center;
+    margin-top: 20px;
   }
 }
 
@@ -204,9 +119,18 @@ a {
   transition: all 0.35s;
   border-radius: 6px;
   background-color: black;
+  cursor: pointer;
 
-  @media (max-width: 550px) {
+  @media (max-width: 1024px) {
     width: 150px;
+    height: 40px;
+    line-height: 40px;
+  }
+  @media (max-width: 480px) {
+    width: 100px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 

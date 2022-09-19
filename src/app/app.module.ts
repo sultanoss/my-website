@@ -22,6 +22,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HotToastModule } from '@ngneat/hot-toast';
+import { IntroComponent } from './intro/intro.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { HotToastModule } from '@ngneat/hot-toast';
     LegalNoticeComponent,
     StartComponent,
     Canvas1Component,
+    IntroComponent,
   ],
 
 

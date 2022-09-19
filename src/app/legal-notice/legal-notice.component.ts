@@ -3,19 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-legal-notice',
   templateUrl: './legal-notice.component.html',
-  styleUrls: ['./legal-notice.component.scss']
+  styleUrls: ['./legal-notice.component.scss'],
 })
 export class LegalNoticeComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-
-    this.scrollToBanner()
+    this.scrollToBanner();
   }
 
   scrollToBanner() {
     document.documentElement.scrollTop = document.body.scrollTop = 0;
   }
-
 }

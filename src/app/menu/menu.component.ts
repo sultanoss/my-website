@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -6,11 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  @Input() scale: boolean = false;
-
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  constructor() {}
+  constructor(public router: Router) {}
   ngOnInit(): void {}
+
+  scrolltoSkills() {
+    let el = document.getElementById('my-skills');
+    el?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
 
   scrolltoAboutMe() {
     let el = document.getElementById('about');
@@ -20,13 +26,20 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  showMenu() {
-    document.getElementById('mobile-menu').classList.remove('hide-menu');
-    document.getElementById('mobile-menu').classList.add('show-menu');
+  scrolltoWorks() {
+    let el = document.getElementById('my-works');
+    el?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
   }
 
-  closeMenu() {
-    document.getElementById('mobile-menu').classList.add('hide-menu');
-    document.getElementById('mobile-menu').classList.remove('show-menu');
+  scrolltoBanner() {
+    let el = document.getElementById('banner');
+    el?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
   }
+
 }

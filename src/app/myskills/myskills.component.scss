@@ -29,8 +29,7 @@ h2 {
   width: 100%;
   justify-content: center;
 
-  @media(max-width:1024px){
-
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
   }
 }
@@ -52,8 +51,7 @@ h2 {
   width: 100%;
   justify-content: center;
 
-  @media(max-width:1024px){
-
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
   }
 }
@@ -65,8 +63,7 @@ h2 {
   width: 100%;
   justify-content: center;
 
-  @media(max-width:1024px){
-
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
   }
 }
@@ -76,15 +73,14 @@ h2 {
   width: 250px;
   border-radius: 6px;
   background-color: white;
-  margin-left: 50px;
+  margin: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  @media(max-width:1024px){
-
+  @media (max-width: 1024px) {
     margin: 35px;
   }
 
